@@ -28,6 +28,7 @@
     <style type="text/tailwindcss">
       @theme {
         --color-theme: #179800;
+        --color-services: #efebe3;
       }
       .bg-gradient {
         background: linear-gradient(180deg, #ffffff 0%, #f2f7ef 100%);
@@ -90,7 +91,9 @@
 
     <section class="mt-4 bg-gradient">
       <div class="container mx-auto px-4 md:px-6 lg:px-8">
-        <h1 class="text-5xl font-bold text-center leading-normal pt-10 pb-2">
+        <h1
+          class="text-4xl md:text-5xl font-bold text-center leading-normal pt-10 pb-2"
+        >
           Freshness
           <span class="text-theme"
             >You Can <br />
@@ -98,17 +101,68 @@
           >
           On, Prices You’ll Love!
         </h1>
-        <p class="leading-auto text-center text-[24px] font-normal pt-5">
+        <p
+          class="leading-auto text-center text-xl md:text-[24px] font-normal pt-5"
+        >
           Shop your daily essentials at unbeatable prices. From fresh produce to
           pantry <br />
           staples, we’ve got you covered every day!
         </p>
-        <div class="flex justify-center mt-4">
+        <div class="flex justify-center mt-11">
           <img
             src="c2-assets/hero-vegetables.png"
             alt="hero-vegetables"
-            class="max-w-[90%]"
+            class="max-w-[90%] hidden md:block"
           />
+          <img
+            src="c2-assets/hero-vegetables.png"
+            alt="hero-vegetables"
+            class="max-w-[100%] sm:block md:hidden"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+
+    <section class="pt-24 pb-20 md:pt-30 md:pb-24">
+      <div class="container mx-auto px-4 md:px-6 lg:px-8">
+        <div>
+          <h2 class="text-theme font-bold text-4xl py-10">Services</h2>
+          <div class="grid grid-cols-1 gap-6 md:grid-cols-3">
+            <div
+              class="col-span-1 bg-services px-8 py-12 rounded-lg flex flex-col items-center text-center gap-5"
+            >
+              <img src="c2-assets/service.png" alt="service" />
+              <h3 class="text-2xl font-bold">24/7 Services</h3>
+              <p class="text-gray-600 font-normal text-xl leading-relaxed">
+                Our support and services are available 24/7, ensuring you get
+                assistance whenever you need it. Day or night, we’re here for
+                you!
+              </p>
+            </div>
+            <div
+              class="col-span-1 bg-services px-8 py-12 rounded-lg flex flex-col items-center text-center gap-5"
+            >
+              <img src="c2-assets/delivery.png" alt="delivery" />
+              <h3 class="text-2xl font-bold">Fast Delivery</h3>
+              <p class="text-gray-600 font-normal text-xl leading-relaxed">
+                Get your orders delivered swiftly to your doorstep with our
+                efficient and reliable service. We ensure minimal wait times and
+                maximum convenience
+              </p>
+            </div>
+            <div
+              class="col-span-1 bg-services px-8 py-12 rounded-lg flex flex-col items-center text-center gap-5"
+            >
+              <img src="c2-assets/service.png" alt="service" />
+              <h3 class="text-lg font-bold">Healthy Products</h3>
+              <p class="text-gray-600 font-normal text-xl leading-relaxed">
+                We offer a wide range of healthy products that are packed with
+                nutrients and vitamins to support your health and well-being
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
